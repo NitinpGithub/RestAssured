@@ -1,0 +1,13 @@
+{
+      "ID": 1,
+      "Name": "bbbbb ccccc",
+      "Location": "New York",
+      "Department": "Engineering",
+      "Designation": "Software Engineer",
+      "Salary": 
+      {
+        "Fixed": 80000,
+        "Variable": 12000,
+        "Bonus": 5000
+      }
+}
