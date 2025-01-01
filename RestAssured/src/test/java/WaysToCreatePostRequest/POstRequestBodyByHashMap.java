@@ -1,6 +1,9 @@
 package WaysToCreatePostRequest;
 
 import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+
 import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
@@ -49,7 +52,7 @@ public class POstRequestBodyByHashMap {
 
 		map.put("Salary", sal);
 
-		given().contentType("application/json")
+				 given().contentType("application/json")
 				.body(map)
 
 				.when().post("http://localhost:3000/employees")
@@ -57,6 +60,7 @@ public class POstRequestBodyByHashMap {
 				.then()
 				.statusCode(201)
 				.body("Name", equalTo("Fiona Clark"))
+				.time(lessThan(2000L))
 				.log().all();
 	}
 	
