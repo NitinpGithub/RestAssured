@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="WaysToCreatePostRequest.ByJsonDotOrg">
+      <class name="Chaining.GetUser">
         <methods>
-          <include name="PostRequestBodyUsingHashMap"/>
+          <include name="GetUser_" invocation-numbers="0"/>
         </methods>
-      </class> <!-- WaysToCreatePostRequest.ByJsonDotOrg -->
+      </class> <!-- Chaining.GetUser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
